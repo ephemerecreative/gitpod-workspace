@@ -1,6 +1,6 @@
 FROM gitpod/workspace-full
 
-RUN curl -fsSL https://get.pulumi.com | shcurl -fsSL https://get.pulumi.com | sh
+RUN curl -fsSL https://get.pulumi.com | sh
 
 RUN curl -L https://github.com/hasura/graphql-engine/raw/stable/cli/get.sh | bash
 
