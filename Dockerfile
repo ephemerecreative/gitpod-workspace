@@ -2,7 +2,7 @@ FROM gitpod/workspace-full
 
 RUN curl -L https://github.com/hasura/graphql-engine/raw/stable/cli/get.sh | bash
 
-RUN yarn add -g @nestjs/cli expo-cli eas-cli @expo/ngrok@^4.1 nps
+RUN npm install -g add @nestjs/cli expo-cli eas-cli @expo/ngrok@^4.1 nps
 
 RUN wget https://github.com/digitalocean/doctl/releases/download/v1.77.0/doctl-1.77.0-linux-amd64.tar.gz && \
     tar xf ./doctl-1.77.0-linux-amd64.tar.gz && \
